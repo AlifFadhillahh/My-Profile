@@ -1,0 +1,11 @@
+runtime: php72
+
+handlers:
+  - url: /images
+    static_dir: /images
+
+  - url: /.*
+    script: auto
+
+env_variables:
+  CLOUD_STORAGE_BUCKET: "profileapp"

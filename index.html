@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Nexa', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile {
+            display: flex;
+            text-align: center;
+            background-color: #fff;
+            height: 600px;
+            width: 1000px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .left img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: 4px top;
+            margin: 0 auto 20px;
+            display: block;
+            background-color: #525358;
+        }
+
+        .left h1 {
+            font-size: 30px;
+            font-weight: normal;
+        }
+
+        .left p {
+            font-size: 15px;
+            margin-top: -8px;
+            font-weight: normal;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: black;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+
+        .right {
+            flex: 1;
+            max-width: 100%;
+            padding: 30px;
+            background-color: #525358;
+            text-align: left;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right h1 {
+            font-size: 25px;
+            margin-left: 2px;
+        }
+
+        .right p {
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile">
+        <div class="left">
+            <img src="/images/profile.png" alt="Profil Pict">
+            <h1>Muhammad Alif Fadhillah</h1>
+            <p>Junior Fullstack Developer</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/AlifFadhillahh" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-alif-fadhillah-6922011b4/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/m_al_f__/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="right">
+            <h1>About me.</h1>
+            <p>
+                I am an enthusiastic Junior Full Stack Developer in the world of software development. I have been
+                learning various web and programming technologies, including HTML, CSS, JavaScript, as well as
+                programming languages such as Node.js. Experience in various projects has enriched my understanding of
+                software development, and I am always seeking opportunities to continue learning and growing in this
+                field.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
