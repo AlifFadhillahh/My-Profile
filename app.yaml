@@ -1,12 +1,14 @@
-runtime: nodejs18
+runtime: python39
+
 instance_class: F1
 
 handlers:
-  - url: /image
-    static_dir: image
+- url: /image
+  static_dir: static/image
 
-  - url: /.*
-    script: auto
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
 
 env_variables:
-  CLOUD_STORAGE_BUCKET: "profileapp"
+  BUCKET_NAME: "profileappp"
